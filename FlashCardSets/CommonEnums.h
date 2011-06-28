@@ -1,0 +1,94 @@
+//
+//  CommonEnums.h
+//  WordPuzzleTestIdeaOne
+//
+//  Created by Douglas Mason on 12/25/09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//
+
+
+// FORWARD_DIAGONAL		-- just like a forward slash
+// BACKWARD_DIAGONAL	-- just like a back slash
+
+typedef enum {
+	DOWN_UP,
+	DOWN_DOWN,
+	ACROSS_LEFT,
+	ACROSS_RIGHT,
+	FORWARD_DIAGONAL_UP,
+	FORWARD_DIAGONAL_DOWN,
+	BACKWARD_DIAGONAL_UP,
+	BACKWARD_DIAGONAL_DOWN
+} WordDirectionWordPlacement;
+
+typedef enum {
+	BLANK,
+	INUSE
+} TileType;
+
+typedef enum {
+	NON_STRIKE_THROUGH,
+	STRIKE_THROUGH
+} SearchForWordsType;
+
+// Enums for determining which sprite to put in the tile.
+
+typedef enum {
+	kTileTypeSprite_NormalTitle,
+	kTileTypeSprite_TileEndTouched,
+	kTileTypeSprite_TileEndTouched_UP,
+	kTileTypeSprite_TileEndTouched_DOWN,
+	kTileTypeSprite_TileEndTouched_LEFT,
+	kTileTypeSprite_TileEndTouched_RIGHT,
+	kTileTypeSprite_TileEndTouched_UP_RIGHT_DIAGONAL,
+	kTileTypeSprite_TileEndTouched_UP_LEFT_DIAGONAL,
+	kTileTypeSprite_TileEndTouched_DOWN_RIGHT_DIAGONAL,
+	kTileTypeSprite_TileEndTouched_DOWN_LEFT_DIAGONAL,
+	kTileTypeSprite_StraightThrough_NON_DIAGONAL,
+	kTileTypeSprite_StraightThrough_DIAGONAL,
+	kTileTypeSprite_StraightThrough_NON_DIAGONAL_AND_DIAGONAL,
+	kTileTypeSprite_Intersection_ACROSS_BACKWARD_DIAGONAL_STRAIGHT_THROUGH,
+	kTileTypeSprite_Intersection_ACROSS_FORWARD_DIAGONAL_STRAIGHT_THROUGH,
+	kTileTypeSprite_Intersection_ACROSS_BACKWARD_DIAGONAL_LINE_UP,
+	kTileTypeSprite_Intersection_ACROSS_FORWARD_DIAGONAL_LINE_UP,
+	kTileTypeSprite_Intersection_ACROSS_BACKWARD_DIAGONAL_LINE_DOWN,
+	kTileTypeSprite_Intersection_ACROSS_FORWARD_DIAGONAL_LINE_DOWN,
+	kTileTypeSprite_Intersection_ACROSS_STRAIGHT_THROUGH,
+	kTileTypeSprite_Intersection_ACROSS_LINE_UP,
+	kTileTypeSprite_Intersection_ACROSS_LINE_DOWN,
+	kTileTypeSprite_Intersection_BACKWARD_DIAGONAL_STRAIGHT_THROUGH,
+	kTileTypeSprite_Intersection_BACKWARD_DIAGONAL_LINE_UP,
+	kTileTypeSprite_Intersection_BACKWARD_DIAGONAL_LINE_DOWN,
+	kTileTypeSprite_Intersection_FORWARD_DIAGONAL_LINE_UP,
+	kTileTypeSprite_Intersection_FORWARD_DIAGONAL_LINE_DOWN,
+	kTileTypeSprite_Intersection_FORWARD_DIAGONAL_STRAIGHT_THROUGH,
+	kTileTypeSprite_Intersection_DOWNUP_FORWARD_DIAGONAL_LINE_UP,
+	kTileTypeSprite_Intersection_DOWNUP_FORWARD_DIAGONAL_LINE_STRAIGHT_THROUGH,
+	kTileTypeSprite_Intersection_DOWNUP_BACKWARD_DIAGONAL_LINE_UP,
+	kTileTypeSprite_Intersection_DOWNUP_BACKWARD_DIAGONAL_LINE_STRAIGHT_THROUGH,
+	kTileTypeSprite_Intersection_DOWNUP_FORWARD_DIAGONAL_LINE_DOWN,
+	kTileTypeSprite_Intersection_DOWNUP_BACKWARD_DIAGONAL_LINE_DOWN,
+	kTileTypeSprite_Intersection_DOWNUP_STRAIGHT_THROUGH,
+	kTileTypeSprite_Intersection_DOWNUP_LINE_LEFT,
+	kTileTypeSprite_Intersection_DOWNUP_LINE_RIGHT,
+	kTileTypeSprite_Intersection_DOWNUP_FORWARD_DIAGONAL_UP_BACKWARD_DIAGONAL_DOWN,
+	kTileTypeSprite_Intersection_DOWNUP_FORWARD_DIAGONAL_DOWN_BACKWARD_DIAGONAL_UP,
+	kTileTypeSprite_Intersection_DOWNUP_LINE_LEFT_FORWARD_DIAGONAL_UP_BACKWARD_DIAGONAL_DOWN,
+	kTileTypeSprite_Intersection_DOWNUP_LINE_RIGHT_FORWARD_DIAGONAL_DOWN_BACKWARD_DIAGONAL_UP,
+	kTileTypeSprite_Intersection_DOWNUP_LINE_ACROSS_FORWARD_DIAGONAL_UP_BACKWARD_DIAGONAL_DOWN,
+	kTileTypeSprite_Intersection_DOWNUP_LINE_ACROSS_FORWARD_DIAGONAL_DOWN_BACKWARD_DIAGONAL_UP,
+	kTileTypeSprite_Intersection_LINE_UP_LINE_LEFT,
+	kTileTypeSprite_Intersection_LINE_UP_LINE_RIGHT,
+	kTileTypeSprite_Intersection_LINE_DOWN_LINE_LEFT,
+	kTileTypeSprite_Intersection_LINE_DOWN_LINE_RIGHT
+} TileTypeSprite;
+
+typedef enum {
+	kDB_Category_NONE = 1,
+	kDB_Category_Adverb = 2,
+	kDB_Category_Noun = 3,
+	kDB_Category_Pronoun = 4,
+	kDB_Category_Verb = 5,
+	kDB_Category_Other = 6
+} CategoryFilter;
+
